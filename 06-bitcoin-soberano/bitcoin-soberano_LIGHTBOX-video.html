@@ -1,0 +1,121 @@
+<h2 style="text-align: center;"><span style="color: #f5d000;">BITCOIN SOBERANO E SEGURO<br>EM 25 PASSOS SIMPLES</span></h2>
+<p style="text-align: center;">(assista o <a href="https://www.youtube.com/playlist?list=PLgcVYwONyxmg-KH5bwzMU4sdyMbVMPqwb" target="_blank" rel="noopener">Canivete Suíço Bitcoinheiro</a> para se aprofundar)</p>
+
+<h3><span style="color: #f5d000;">INSTALE O UBUNTU (8 PASSOS)</span></h3>
+<i>Estamos partindo do pressuposto que você tem um computador Windows velho que pode usar para este projeto. Antes de começar, faça backup de todos os arquivos que você possa precisar desse computador velho porque ele será totalmente formatado para poder instalar do zero um sistema operacional gratuito (e seguro) chamado Ubuntu.</i>
+<ul>
+ 	<li>Conecte um pendrive USB de 16GB (ou superior) em seu computador</li>
+</ul>
+<ul>
+ 	<li>Vá para <a href="https://ubuntu.com/download/desktop" target="_blank" rel="noopener">https://ubuntu.com/download/desktop</a> e baixe a última versão estável do Ubuntu (para sua pasta de Downloads)</li>
+</ul>
+<ul>
+ 	<li>Vá para <a href="https://www.balena.io/etcher/" target="_blank" rel="noopener">https://www.balena.io/etcher/</a> e baixe o Etcher para Windows (para sua pasta de Download)</li>
+</ul>
+<ul>
+ 	<li>Instale e execute o Etcher. Clique em ‘Select Image’ e então clique no arquivo ISO do Ubuntu ISO que você baixou. Então clique em ‘Select Target’ e clique no USB que você conectou, e clique em ‘Flash’</li>
+</ul>
+<ul>
+ 	<li>Desligue seu computador e ligue ele novamente com o USB conectado. Você deve ver uma opção para fazer boot direto do USSB (pode precisar apertar F2/F12 repetidamente enquanto seu computador inicia)</li>
+</ul>
+<ul>
+ 	<li>Selecione instalar Ubuntu, selecione <span style="font-weight: 400;">'Normal installation' (Instalação normal)</span> ative <span style="font-weight: 400;">'Download updates' (Baixar atualizações)</span> e <span style="font-weight: 400;">'Install third-party software' (Instalar software de terceiros)</span></li>
+</ul>
+<ul>
+ 	<li>Na próxima tela, selecione <span style="font-weight: 400;">'Erase disk'(Apagar disco)</span> e <span style="font-weight: 400;">'Encrypt'(Criptografar)</span> e siga o resto da instalação</li>
+</ul>
+<ul>
+ 	<li>Depois de instalado, formate o pendrive USB e renomeie para 'BTC_Backup'</li>
+</ul>
+<h3><span style="color: #f5d000;">INSTALE O BITCOIN CORE (17 passos)</span></h3>
+<ul>
+ 	<li>Execute o Firefox (o ícone é um círculo laranja), vá para <a href="https://bitcoincore.org/en/download/" target="_blank" rel="noopener">https://bitcoincore.org/en/download/</a> e baixe a última versão estável do Bitcoin Core</li>
+</ul>
+<ul>
+ 	<li>Baixe a lista de checksums criptográficos clicando no link ‘<a href="https://bitcoincore.org/bin/bitcoin-core-0.19.0.1/SHA256SUMS.asc" target="_blank" rel="noopener">Verify release signatures</a>’ na página de download acima</li>
+</ul>
+<ul>
+ 	<li>Abra o terminal (o ícone é um retângulo negro). Você precisa executar os comandos a seguir. Insira eles exatamente como estão escritos (ou copie e cole os comandos no terminal para não cometer erros)</li>
+</ul>
+<ul>
+ 	<li>Digite <code>cd Downloads/</code></li>
+</ul>
+<ul>
+ 	<li>Digite <code>sha256sum --ignore-missing --check SHA256SUMS.asc</code></li>
+</ul>
+<ul>
+ 	<li>Ignore avisos e falhas, mas certifique-se de que haja “OK” depois do nome do arquivo que você baixou. Por ex.: <code>bitcoin-0.19.0.1-x86_64-linux-gnu.tar.gz: OK</code></li>
+</ul>
+<ul>
+ 	<li>Digite <code>gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 01EA5486DE18A882D4C2684590C8019E36C2E964</code>
+Deve aparecer um texto dizendo que a chave foi importada, atualizada, tem novas assinaturas ou não foi alterada</li>
+</ul>
+<ul>
+ 	<li>Digite <code>gpg --verify SHA256SUMS.asc</code>
+Deve aparecer um texto com uma linha que começa assim:
+<code>gpg: Good signature
+</code>e uma linha completa dizendo:
+<code>Primary key fingerprint: 01EA 5486 DE18 A882 D4C2 6845 90C8 019E 36C2 E964</code>Se houver um aviso dizendo que “key is not certified with a trusted signature” você deve pedir que alguma pessoa que você confia confirme que o fingerprint da chave pertence a chave que assina o release do Bitcoin Core Project. Você pode assistir este vídeo do [video_lightbox_youtube video_id="nLmUXFCfyc8" width="1280" height="720" anchor="Canivete Bitcoinheiro sobre PGP"]</li>
+</ul>
+<ul>
+ 	<li>Digite <code>tar xzf bitcoin-0.19.0.1-x86_64-linux-gnu.tar.gz</code></li>
+</ul>
+<ul>
+ 	<li>Digite <code>sudo install -m 0755 -o root -g root /usr/local/bin bitcoin-0.19.0.1/bin/*</code></li>
+</ul>
+<ul>
+ 	<li>Digite <code>/usr/local/bin/bitcoin-qt</code></li>
+</ul>
+<ul>
+ 	<li>Clique em OK. O Bitcoin Core vai baixar a blockchain (os blocos) da rede Bitcoin. Este passo pode demorar alguns dias para ser concluído</li>
+</ul>
+<ul>
+ 	<li>Nas configurações, clique em criptografar carteira (encrypt wallet) e insira uma senha forte (4 palavras aleatórias, por ex.) faça várias cópias dessa senha em papel e armazene em diferentes pontos seguros da sua casa. Idealmente, dê cópias adicionais dessa senha para amigos/familiares de confiança, você não precisa dar muitos detalhes, só colocar em um envelope com você como destinatário e pedir para guardarem para você. É muito importante que você não perca essa senha, ou vai perder seus bitcoins</li>
+</ul>
+<ul>
+ 	<li>Vá para Arquivo, Backup e salve um backup no pendrive USB que você nomeou anteriormente de ‘BTC_Backup’. Coloque-o em um envelope que esteja marcado claramente como ‘IMPORTANTE — PROPRIEDADE DE XXX’ e armazene em um local seguro, longe do computador (em um quarto diferente ou em outra localização geográfica de preferência). Tenha algumas cópias pelas dúvidas</li>
+</ul>
+<ul>
+ 	<li>Nas configurações, ative ‘Coin control’(Controle de moedas) e altere a unidade padrão de bitcoins para sats (1/100.000.000 de um bitcoin) se você preferir</li>
+</ul>
+<ul>
+ 	<li>Quando você quiser receber bitcoin, clique na aba Receber e insira informação sobre o que você vai receber no campo de ETIQUETA (serve para que você tenha mais controle sobre aquele bitcoin e quem sabe que você tem ele). Se você sabe o valor em bitcoin que vai receber, pode inserir a quantia aqui (não é obrigatório). Clique em 'Create New Receiving Address'(Criar novo endereço receptor)</li>
+</ul>
+<ul>
+ 	<li>Quando você receber bitcoin, ele aparecerá em suas transações. Ao receber bitcoin de alguém que você não confia, sempre espere 6 confirmações antes de considerar a transação confirmada definitivamente. Depois de 6 confirmações você pode comemorar, você recebeu seus primeiros satoshinhos sem confiar em nenhum terceiro — você é um bitcoinheiro seguro e soberano
+<p><br></p>
+<p style="text-align: center;">___________________________________________________</p>
+<p><b>
+Este guia foi criado com informações retiradas dos guias nos sites a seguir:</b></p>
+<ul>
+ 	<li><a href="https://bitcoin.org/en/full-node#other-linux-gui" target="_blank" rel="noopener"><i>https://bitcoin.org/en/full-node</i></a></li>
+</ul>
+</li>
+</ul>
+<ul>
+ 	<li style="list-style-type: none;">
+<ul>
+ 	<li><a href="https://bitcoincore.org/en/download/" target="_blank" rel="noopener"><i>https://bitcoincore.org/</i></a></li>
+</ul>
+</li>
+</ul>
+<ul>
+ 	<li style="list-style-type: none;">
+<ul>
+ 	<li><a href="https://6102bitcoin.com/secure-bitcoin/" target="_blank" rel="noopener">https://6102bitcoin.com/secure-bitcoin/</a></li>
+</ul>
+</li>
+</ul>
+
+<p style="padding-left: 40px;"><b>Sugestões de vídeos complementares e outras ideias:</b></p>
+
+<ul>
+ 	<li><a href="https://www.youtube.com/playlist?list=PLgcVYwONyxmg-KH5bwzMU4sdyMbVMPqwb" target="_blank" rel="noopener"><i>Canivete Suíço Bitcoinheiro</i></a><i><i> – Fundamentos para usar o Bitcoin com segurança</i></i></li>
+</ul>
+</li>
+</ul>
+<ul>
+ 	<li><a href="https://www.youtube.com/watch?v=67P2qvhAmzU" target="_blank" rel="noopener"><i>Coldwallet com Electrum Wallet</i></a><i> – Possível usar Electrum com Bitcoin Core na máquina online deste setup de carteira fria</i></li>
+</ul>
+</li>
+</ul>

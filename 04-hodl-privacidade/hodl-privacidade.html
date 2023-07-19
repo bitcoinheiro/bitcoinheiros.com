@@ -1,0 +1,208 @@
+ <link rel="stylesheet" href="../wp-admin/css/style_intro.css" type="text/css" />
+        <link rel="stylesheet" href="../wp-admin/css/style_intro.css" type="text/css" />
+
+
+ <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+                    <h2 id="index">HODL de Bitcoin com Privacidade</h2>
+                    <ul>
+                        <li>
+                            <a href="#motivacao">Motivação</a>
+                        </li>
+                        <li>
+                            <a href="#vazamentos-de-dados-potenciais">Vazamentos de dados potenciais</a>
+                            <ul>
+                                 <li>
+                                    <a href="#exchanges-de-bitcoin">Exchanges</a>
+                                </li>
+                                <li>
+                                    <a href="#exploradores-de-blocos">Exploradores de blocos</a>
+                                </li>
+                                <li>
+                                    <a href="#conversao-de-quantia-exata">Conversão de quantia exata</a>
+                                </li>
+                                <li>
+                                    <a href="#plugins-do-navegador">Plugins do navegador</a>
+                                </li>
+                                <li>
+                                    <a href="#software-de-hardwallet">Software de hardwallet</a>
+                                </li>
+                                <li>
+                                    <a href="#carteira-com-autenticacao-2fa-email">Carteira com autenticação 2FA por e-mail</a>
+                                </li>
+                                <li>
+                                    <a href="#download-de-bloco-limitado">Download de bloco limitado</a>
+                                </li>
+                                <li>
+                                    <a href="#http">HTTP</a>
+                                </li>
+                                <li>
+                                    <a href="#confirmacoes-por-email">Confirmações por e-mail</a>
+                                </li>
+                            </ul>
+                             <li>
+                                    <a href="#videos-privacidade-bitcoinheiros">Vídeos de dicas de Privacidade no Bitcoin dos bitcoinheiros</a>
+                             </li>
+                        </li>
+                    </ul>
+                    <p><br></p>
+                    <p><center><img src="https://bitcoinheiros.com/wp-content/uploads/2020/03/primeira_regra_bitcoin_privacidade.png" width="500"></center></p>
+                    <p><br></p>
+                     <p><br><iframe width="640" height="360" src="https://www.youtube.com/embed/qJMHS3jfetI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br></p><p><br></p>
+                    <a id="motivacao"></a>
+                    <h2 id="motivacao">Motivacao</h2>
+                    <p>Já há algum tempo estou pensando sobre a privacidade no Bitcoin. Durante o mês de fevereiro de 2020 preparei <a href="https://www.youtube.com/playlist?list=PLgcVYwONyxmhS94ynhdPIK6quG_OcprXf" target="_blank">vários vídeos sobre privacidade</a> para compartilhar o que eu sei até o momento e ajudar os bitcoinheiros a entenderem melhor quais são realmente as implicações de privacidade, quem são nossos adversários, o que devemos fazer para não vincular nossas informações pessoais com endereços de bitcoin e como evitar que terceiros nos monitorem. É um assunto que me intriga bastante e não poderia ser diferente - sou um pseudônimo que usa um <a href="https://www.youtube.com/playlist?list=PLgcVYwONyxmhrlSK1ykcCEb6oOeE3kS1c" target="_blank">rig de urso para se apresentar nas interwebs</a></p>
+                    <blockquote>
+                        <p>“A moda agora parece ser dizer que o Bitcoin é completamente transparente e ainda pior que o sistema bancário para a privacidade. Mas me responda o seguinte: <strong>se eu sair na rua, trocar dinheiro por BTC e guardar esses satoshis na minha carteira privada, qual corporação vai saber quanto eu tenho?</strong>”</p>
+                    </blockquote>
+                    <p>A resposta é que vai depender muito das ferramentas e serviços que você usar.</p>
+                    <ul>
+                        <li>Utilizando as melhores ferramentas do bitcoin
+                        <strong>com cuidado</strong>, é 
+                        <strong>impossível</strong> que alguém saiba quanto bitcoin você tem.</li>
+                        <li>Utilizando as piores ferramentas (e geralmente as mais comuns) 
+                        <strong>sem cuidado</strong>, é
+                        <strong>possível</strong> que um adversário motivado tenha uma boa ideia do seu saldo total com o tempo.</li>
+                    </ul>
+                    <p>A maioria dos vazamentos de informação potenciais identificados não vinculam suas moedas diretamente com a sua pessoa física. Eles vinculam dados que podem ser vinculados a você (através do endereço IP, por exemplo). Geralmente é a combinação de várias fontes de dados que cria problemas, os famosos data points.</p>
+                    <p>
+                    <strong>Não se desespere</strong>: As maneiras de interagir com o bitcoin estão melhorando com o tempo e as melhores maneiras de utilizar o bitcoin estão cada dia mais sofisticadas e fáceis de usar. Este guia tem como intenção ajudar você a se armar com as ferramentas para fazer seu HODL com privacidade.</p>
+                    <p><br></p>
+                    <hr />
+                    <a id="vazamentos-de-dados-potenciais"></a>
+                    <h2 id="vazamentos-de-dados-potenciais">Vazamentos de dados potenciais</h3>
+                    <p>Para cada vazamento de dado potencial identificado, listei:</p>
+                    <ul>
+                        <li>
+                        <strong>Ato</strong>: Como você pode se expor e vazar dados acidentalmente</li>
+                        <li>
+                        <strong>Dados vazados</strong>: Qual informação pode vazar e para quem</li>
+                        <li>
+                        <strong>Como mitigar</strong>: Como você pode limitar/evitar o vazamento de dados</li>
+                    </ul>
+                    <hr />
+                    <p><br></p>
+                    <a id="exchanges-de-bitcoin"></a>
+                    <h2 id="exchanges-de-bitcoin">Exchanges de Bitcoin</h2>
+                    <h4 id="action">Ato:</h4>
+                    <p>Você cria uma conta em uma exchange e compra bitcoins se identificando totalmente, oferecendo todos os seus dados pessoais para aquela instituição.</p>
+                    <h4 id="data-leak">Dados vazados:</h4>
+                    <p>A empresa ou os indivíduos por trás da corretora coletam todas as informações sobre você e vinculam essas informações com seus endereços bitcoin. Algumas corretoras também colaboram com [video_lightbox_youtube video_id="Si2UtIPYydE" width="1280" height="720" anchor="empresas de espionagem na blockchain"] para seguir seus passos depois que você faz a compra e sempre que deposita nela. Todo esse compartilhamento de dados por si só, já é um grande risco para a segurança dos usuários dessas corretoras. Além disso, desde 1/Ago/2019 essa situação se agravou com a necessidade da corretora compartilhar dados sobre suas transações para a receita, aumentando ainda mais a superfície de ataque. Seus adversários potenciais são funcionários corruptos da exchange, da empresa de espionagem da blockchain, da receita e qualquer bandido que conseguir acesso ao banco de dados da exchange, da empresa de espionagem ou da receita. Ao coletar e armazenar essas informações sensíveis, todas as partes se transformam em alvo para bandidos em busca de informação. Esse é um problema que foi herdado do sistema bancário tradicional, mas que no caso das criptmoedas pode colocar a segurança do usuário em maior risco, especialmente aqueles mais obedientes que "não tem nada para esconder".</p>
+                    <h4 id="mitigation">Como mitigar:</h4>
+                    <p>Lembre-se que sua privacidade está totalmente exposta nessas exchanges e que você deve atuar de acordo para fazer a sua segurança pessoal se adquirir fundos através dessas instituições de vigilância e controle. A melhor maneira de mitigar esse risco é votando com seu dinheiro: não comprando mais nessas exchanges enquanto não respeitarem você.</p>
+                    <p>Assista [video_lightbox_youtube video_id="ixoN6IP-yq4" width="1280" height="720" anchor="Comprando bitcoins com privacidade"] e veja alternativas em nosso <a href="https://bitcoinheiros.com/intro-bitcoin/#passo-9-comprando-privacidade" target="_blank">Guia de Introdução ao Bitcoin</a> ou na tabela de exchanges <a href="https://bitcoinheiros.com/kyc" target="_blank">KYC? Sai fora!</a></p><p></p>Aprenda mais sobre <a href="https://www.youtube.com/playlist?list=PLgcVYwONyxmgxF0k5qMR15Ym7Qo2Wkall" target="_blank">Coinjoin</a> se já comprou na exchange com KYC/AML e quer usar com privacidade</p>
+                    <p><br></p>
+                    <hr />
+                    <a id="exploradores-de-blocos"></a>
+                    <h2 id="exploradores-de-blocos">Exploradores de blocos</h2>
+                    <h4 id="action">Ato:</h4>
+                    <p>Você usa um site explorador de blocos para verificar seus endereços, confirmar se recebeu pagamentos.</p>
+                    <h4 id="data-leak">Dados vazados:</h4>
+                    <p>A empresa ou o indivíduo por trás do explorador de blocos pode vincular qualquer informação que você inserir no site (como endereços de bitcoin ou id de transações) com seu endereço IP. Se você verifica se um endereço de bitcoin tem saldo nele, é um sinal fraco-médio de que é o seu endereço... Se você verifica se um endereço de bitcoin tem saldo nele e ele recém recebeu bitcoin ou logo depois que você verificou ele recebeu bitcoin, esse é um sinal forte de que se trata de um endereço de bitcoin seu.</p>
+                    <h4 id="mitigation">Como mitigar:</h4>
+                    <p>Acesse os Block Explorers usando TOR. (como o 
+                    <a href="http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/">blockstream.info</a>) ou rode seu próprio 
+                    <a href="https://github.com/janoside/btc-rpc-explorer">software de block explorer</a> que puxa dados do seu full node privado e soberano.</p>
+                    <p>Veja este vídeo no canal dos bitcoinheiros: [video_lightbox_youtube video_id="WpeXvjRW62c" width="1280" height="720" anchor="Blockchain explorer é ruim para a privacidade"]</p>
+                    <p><br></p>
+                    <hr />
+                    <a id="conversao-de-quantia-exata"></a>
+                    <h2 id="conversao-de-quantia-exata">Conversao de quantia exata</h2>
+                    <h4 id="action-1">Ato:</h4>
+                    <p>Buscar ‘Quanto vale x.xxxxxxx BTC em R$’ (ou utlizar outras ferramentas de conversão na web).</p>
+                    <h4 id="data-leak-1">Dados vazados:</h4>
+                    <p>Se a quantia de bitcoin que você buscou fizer parte de um único UTXO e for um valor único, então o buscador ou site podem associar aquele endereço de IP com aquele valor cruzado na blockchain. Se o buscador for o Google, por exemplo, e você estiver conectado, eles podem até vincular aquele UTXO com você (eles têm quase todas as suas informações pessoais).</p>
+                    <h4 id="mitigation-1">Como mitigar:</h4>
+                    <p>Busque com o 
+                    <a href="http://3g2upl4pq6kufc4m.onion/">DuckDuckGo através do TOR</a> | Busque com menos precisão x.xx BTC | Calcule manualmente</p>
+                    <p><br></p>
+                    <hr />
+                    <a href="plugins-do-navegador"></a>
+                    <h2 id="plugins-do-navegador">Plugins do navegador</h2>
+                    <h4 id="action-2">Ato:</h4>
+                    <p>Você utiliza um plugin com acesso para todos os websites que você visita e faz alguma das coisas listadas acima ou mais.</p>
+                    <h4 id="data-leak-2">Dados vazados:</h4>
+                    <p>O desenvolvedor do plugin obtem uma cópia dos dados vazados acima (através de exploradores de blocos ou conversão de valores exatos). Além de outros comportamentos e sites relacionados com bitcoin que você visita.</p>
+                    <h4 id="mitigation-2">Como mitigar:</h4>
+                    <p>Evite plugins com acesso muito amplo do seu histórico de navegação | Utilize um navegador especial sem plugins (Tor Browser, por exemplo) quando fizer coisas relacionadas com bitcoin | Utilize o modo de navegação incógnito/privado para fazer coisas relacionadas com bitcoin sem cookies ou plugins.</p>
+                    <p><br></p>
+                    <hr />
+                    <a id="software-de-hardwallet"></a>
+                    <h2 id="software-de-hardwallet">Software de hardwallet</h2>
+                    <h4 id="action-3">Ato:</h4>
+                    <p>Você utiliza a carteira/software fornecida pela fabricante da sua hardwallet.</p>
+                    <h4 id="data-leak-3">Dados vazados:</h4>
+                    <p>A maioria das hardwallets vem com um software/site que envia suas chaves públicas para os servidores da fabricante da hardware wallet. Isso significa que o fabricante da hardwallet pode vincular seu endereço IP com suas moedas. Se o fabricante da sua hardwallet requisitar que você tenha uma conta ou compartilhe outras informações pessoais, então ele também pode vincular esses dados com suas moedas.</p>
+                    <h4 id="mitigation-3">Como mitigar:</h4>
+                    <p>Utilize carteiras de bitcoin que não vazam dados sobre suas moedas, como por exemplo a carteira
+                    <a href="https://electrum.org/#home">electrum</a> com 
+                    <a href="https://github.com/chris-belcher/electrum-personal-server">electrum personal server</a> ou a
+                    <a href="https://wasabiwallet.io">wasabi wallet</a>.</p>
+                    <p>Assista estes <a href="https://www.youtube.com/playlist?list=PLgcVYwONyxmjZuXVmllvk1H5Yyb95u0X2" target="_blank">vídeos dos bitcoinheiros sobre a Electrum Wallet</a><br>
+                    Assista estes <a href="https://www.youtube.com/playlist?list=PLgcVYwONyxmgLuVTL2BgUcS4Muh5Jgiuw" target="_blank">vídeos sobre a Wasabi Wallet</a></p>
+                    <p><br></p>
+                    <hr />
+                    <a id="carteira-com-autenticacao-2fa-email"></a>
+                    <h2 id="carteira-com-autenticacao-2fa-email">Carteira com autenticacao 2FA por e-mail</h2>
+                    <h4 id="action-4">Ato:</h4>
+                    <p>Você usa uma carteira com autenticação 2FA por e-mail que não está conectada exclusivamente com seu próprio node.</p>
+                    <h4 id="data-leak-4">Dados vazados:</h4>
+                    <p>Seu endereço de e-mail pode ser vinculado com suas moedas, porque a carteira vaza informação sobre suas moedas para o servidor do desenvolvedor da carteira junto com seu endereço IP (que pode ser loggado quando você forneceu seu endereço de e-mail).</p>
+                    <h4 id="mitigation-4">Como mitigar:</h4>
+                    <p>Evite autenticação 2FA por e-mail (opte por alternativas como o Google Authenticator sempre que possível) para carteiras de bitcoin e conecte sua carteira com seu próprio node.</p>
+                    <p><br></p>
+                    <hr />
+                    <a id="download-de-bloco-limitado"></a>
+                    <h2 id="download-de-bloco-limitado">Download de bloco limitado</h2>
+                    <h4 id="action-5">Ato:</h4>
+                    <p>Você usa uma carteira light que tem regras de download de blocos pouco sofisticadas através da internet pública (clearnet).</p>
+                    <h4 id="data-leak-5">Dados vazados:</h4>
+                    <p>A maioria das carteiras light baixam apenas os blocos relevantes para suas transações, facilitando que adversários monitorando os blocos que você baixa (como seu provedor de internet) possam identificar os endereços em comum dentro daqueles blocos. Seu provedor pode então conectar seu ponto de conexão à internet / endereço IP com suas moedas.</p>
+                    <h4 id="mitigation-5">Como mitigar:</h4>
+                    <p>Utilize uma carteira que se conectar com seu full node (que baixa 
+                    <strong>todos os blocos</strong>, impedindo esse ataque) | Utilize uma carteira que preserva sua privacidade (como a  
+                    <a href="https://www.youtube.com/playlist?list=PLgcVYwONyxmgLuVTL2BgUcS4Muh5Jgiuw" target="_blank">wasabi wallet</a>).</p>
+                    <p><br></p>
+                    <hr />
+                    <a id="http"></a>
+                    <h2 id="http">HTTP</h2>
+                    <h4 id="action-6">Ato:</h4>
+                    <p>Você faz qualquer uma das coisas acima sem uma conexão criptografada com o servidor com o qual se comunica (como através do protocolo http).</p>
+                    <h4 id="data-leak-6">Dados vazados:</h4>
+                    <p>Seu provedor pode interceptar todos os dados vazados acima. Se estiver usando Tor, o exit relay também pode interceptar todos os dados.</p>
+                    <h4 id="mitigation-6">Como mitigar:</h4>
+                    <p>Conecter-se apenas através de HTTPS (busque pelo cadeado ao lado da URL). Existe um <a href="https://www.eff.org/https-everywhere" target="_blank">plugin da EFF que força a usar https</a> em todos os sites. Outro bom plugin deles é o <a href="https://www.eff.org/privacybadger" target="_blank">Privacy Badger</a> que bloqueia trackers que também podem comprometer sua privacidade.</p>
+                    <p><br></p>
+                    <hr />
+                    <a id="confirmacoes-por-email"></a>
+                    <h2 id="confirmacoes-por-email">Confirmacoes por e-mail</h2>
+                    <h4 id="action-7">Ato:</h4>
+                    <p>Você compra mais BTC para seu HODL usando uma exchange online para enviar para um endereço de armazenamento cold que você já usou no passado.</p>
+                    <h4 id="data-leak-7">Dados vazados:</h4>
+                    <p>E-mails de confirmação confirmando o saque vazam o endereço para seu provedor de e-mail (como a Google/Microsoft). A corretora também pode vincular sua conta de e-mail (e outras informações que ela tenha) com aquele endereço.</p>
+                    <h4 id="mitigation-7">Como mitigar:</h4>
+                    <p>Desativar notificações se possível | Utilizar um e-mail dedicado que não esteja conectado com a sua identidade.</p>
+                    <p>Assista este vídeo sobre o risco da [video_lightbox_youtube video_id="6-xD5fcX7MI" width="1280" height="720" anchor="Reutilização de endereços"] para a privacidade<br>
+                        Veja como as exchanges podem [video_lightbox_youtube video_id="Si2UtIPYydE" width="1280" height="720" anchor="vazar seus dados para empresas de análise da Blockchain"]<br>
+                    Não se assuste, você ainda pode [video_lightbox_youtube video_id="ixoN6IP-yq4" width="1280" height="720" anchor="comprar bitcoins com privacidade"]</p>
+                    <p><br></p>
+                    <hr />
+                    <a id="videos-privacidade-bitcoinheiros"></a>
+                    <h2 id="videos-privacidade-bitcoinheiros">Videos para entender sobre Privacidade no Bitcoin</h2>
+                    <p>Não deixe de assistir a nossa <a href="https://www.youtube.com/playlist?list=PLgcVYwONyxmhS94ynhdPIK6quG_OcprXf" target="_blank">playlist de Privacidade no Bitcoin</a> com diversos vídeos para você entender como melhorar a privacidade dos seus bitcoins.</p>
+        <p><br></p>        </div>
+        
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+          <a id="forkme_banner" href="https://6102bitcoin.com/faq-hodl-privacy/" target="_blank">Fork do HODL-privacy</a>
+        
+        <p class="copyright">Fork do HODL-privacy mantido pelo <a href="https://github.com/6102bitcoin" target="_blank">6102bitcoin</a><br>
+        Traduzido e alterado para os <a href="https://www.twitter.com/bitcoinheiros" target="_blank">bitcoinheiros</a> por <a href="https://www.twitter.com/bitdov" target="_blank">bitdov</a></p>
+        <p>ISENÇÃO DE RESPONSABILIDADE:<br>
+Este guia foi preparado para fins meramente informativos/educativos.<br>
+NÃO é uma recomendação financeira nem de investimento.<br>
+Faça sua própria pesquisa e responsabilize-se por suas decisões.<br>
+Não nos responsabilizamos por ações executadas inspiradas neste guia.</p>
+      </footer>
+    </div>
