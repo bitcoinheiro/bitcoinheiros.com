@@ -1,6 +1,6 @@
 # bitcoinheiros.com
 Este repositório contém as páginas de referência no site dos bitcoinheiros em formato HTML para envio de sugestões de alteração, remoção e adição de conteúdo para manter as referências sempre atualizadas para o grande público. Todas as páginas estão em HTML simples e as sugestões de alteração devem ser feitas diretamente no código se possível. Lembre-se de priorizar vídeos dos bitcoinheiros nas referências e conteúdo em vídeo exibido/referenciado no site, mas se houver algo realmente espetacular de outro criador bitcoinheiro, não hesite em oferecer como sugestão de melhoria.  
-Novas adições a este repositório são MUITO bem-vindas. Se tiver ideia de alguma página adicional ou mudanças no nosso site, queremos saber mais. Abra um **issue** com tag "Sugestão" / "Aprimoramento"
+Novas adições a este repositório são MUITO bem-vindas. Se tiver ideia de alguma página adicional ou mudanças no nosso site, queremos saber mais. [Abra um **issue**](https://github.com/bitcoinheiro/bitcoinheiros.com/issues/new/choose) com tag "Sugestão" / "Aprimoramento"
 
 ## 01-intro-bitcoin
 Provavelmente a página mais importante, é um guia completo de introdução ao Bitcoin para iniciantes.
